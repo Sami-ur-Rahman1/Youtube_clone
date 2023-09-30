@@ -248,7 +248,7 @@ img{
 }
 
 .chips-wrapper::-webkit-scrollbar{
-    height: 0;
+    height: 5px;
 }
 
 .chip{
@@ -269,15 +269,14 @@ img{
 
 /*-----------------video container starts here-----------------*/
 .video-container{
+    overflow-x: scroll;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 18px;
-    overflow-y: scroll;
-    /*grid gap removed*/
     padding: 20px 25px;
     background-color: #0F0F0F;
-    
-    height: calc(100vh -116px);
+    /* height: calc(100vh -116px); */
+    height: 100%;
 }
 
 .video-content-cover{
